@@ -1,8 +1,8 @@
 def get_task_info():
     
-    task = input("Enter the task description: ")
-    priority = input("Enter the task priority (high, medium, low): ").lower()
-    time_bound = input("Is the task time-sensitive? (yes or no): ").lower()
+    task = input("Enter your task: ")
+    priority = input("Priority (high/medium/low): ").lower()
+    time_bound = input("Is it time-bound? (yes or no): ").lower()
     return task, priority, time_bound
 
 def create_reminder(task, priority, time_bound):
