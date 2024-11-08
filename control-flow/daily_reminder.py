@@ -9,14 +9,13 @@ def create_reminder(task, priority, time_bound):
     
     match priority:
         case "high":
-            reminder = print(f"High-priority task: {task}.")
+            reminder = print(f"{task} is a High-priority task: .")
         case "medium":
-            reminder = print(f"Medium-priority task: {task}.")
+            reminder = print(f"{task}is a Medium-priority task: .")
         case "low":
-            reminder = print(f"Low-priority task: {task}.")
+            reminder = print(f"{task}is a Low-priority task: .")
         case _:
-            reminder = print(f"Task: {task} (unknown priority).")
-
+            reminder = print(f"{task}:  (unknown priority).")
 
               
     if time_bound == "yes":
