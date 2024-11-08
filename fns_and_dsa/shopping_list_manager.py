@@ -13,7 +13,7 @@ def remove_item(item):
   else:
     print(f"{item} not found in the list.")
 
-def view_list():
+def display_menu():
   """Prints the current shopping list."""
   if shopping_list:
     print(f"Shopping List:")
@@ -28,7 +28,7 @@ def main():
     print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
-    print("3. View List")
+    print("3. Display menu")
     print("4. Exit")
 
     choice = input("Enter your choice (1-4): ")
@@ -40,7 +40,7 @@ def main():
       item = input("Enter item name to remove: ")
       remove_item(item)
     elif choice == '3':
-      view_list()
+      display_menu()
     elif choice == '4':
       print("Exiting Shopping List Manager.")
       break
