@@ -16,7 +16,7 @@ def remove_item(item):
 def display_menu():
   """Prints the current shopping list."""
   if shopping_list:
-    print(f"{shopping_list}:")
+   print(f"{shopping_list:}")
     for item in shopping_list:
       print(f"- {item}")
   else:
