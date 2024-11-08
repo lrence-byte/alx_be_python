@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
   while True:
     try:
-      days = int(input("Enter the number of days to add (or 0 to exit): "))
+      days = int(input("Enter the number of days to add to the current date:"))
       if days == 0:
         break
       calculate_future_date(days)
