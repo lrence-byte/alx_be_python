@@ -8,15 +8,15 @@ def get_task_info():
 def create_reminder(task, priority, time_bound):
     
     match priority:
-        case "high":
-            reminder = print(f"{task} is a High-priority task: .")
+       case "high":
+            print(f"{task} is a High-priority task: .")
         case "medium":
-            reminder = print(f"{task}is a Medium-priority task: .")
+            print(f"{task}is a Medium-priority task: .")
         case "low":
-            reminder = print(f"{task}is a Low-priority task: .")
+            print(f"{task}is a Low-priority task: .")
         case _:
-            reminder = print(f"{task}:  (unknown priority).")
-
+            print(f"{task}:  (unknown priority).")
+ 
               
     if time_bound == "yes":
         reminder += " This task requires immediate attention today!"
