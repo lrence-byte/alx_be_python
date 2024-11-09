@@ -21,10 +21,10 @@ class SimpleCalculator:
             return None
         return a / b
 
-# import unittest
-# from test_simple_calculator import SimpleCalculator
+import unittest
+from simple_calculator import SimpleCalculator
 
-# class TestSimpleCalculator(unittest.TestCase):
+class TestSimpleCalculator(unittest.TestCase):
 
     def test_addition(self):
         """Test the addition method."""
