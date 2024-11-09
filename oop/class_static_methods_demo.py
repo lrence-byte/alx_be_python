@@ -8,7 +8,7 @@ class Calculator:
     
     @classmethod
     def multiply(cls, a, b):
-        print(f"Using class: {cls.calculation_type}")
+        print(f"Calculation type: {cls.calculation_type}")
         return a * b
 
 from class_static_methods_demo import Calculator
