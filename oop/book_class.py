@@ -4,7 +4,7 @@ class Book:
         self.title = title
         self.author = author
         self.year = year
-        print(f"Book '{self.title}' created!")
+    
     
     def __del__(self):
         print(f"Deleting {self.title}")
