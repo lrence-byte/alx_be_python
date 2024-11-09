@@ -14,7 +14,7 @@ class EBook(Book):
         self.file_size = file_size
 
     def __str__(self):
-        return f"Ebook: {self.title} by {self.author}, File size: {self.file_size}KB"
+        return f"EBook: {self.title} by {self.author}, File size: {self.file_size}KB"
 
 class PrintBook(Book):
     
@@ -51,7 +51,7 @@ def main():
 
     # Create instances of each type of book
     classic_book = Book("Pride and Prejudice", "Jane Austen")
-    digital_novel = Ebook("Snow Crash", "Neal Stephenson", 500)
+    digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
     paper_novel = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
     # Add books to the library
